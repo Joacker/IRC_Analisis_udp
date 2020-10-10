@@ -39,7 +39,7 @@ $ docker run -it --name clienteIRC irssi
 
 Crear un contenedor con la imagen de Polymorph
 ```sh
-$ docker run --privileged
+$ docker run --privileged --name Polymorph polymorph
 ```
 
 ## Video capturando trafico generado entre el servidor y cliente
