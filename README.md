@@ -6,22 +6,22 @@ Por Pablo Ahumada y Joaquín Fernández.
 
 Clona el directorio:
 ```sh
-$ git clone https://github.com/ElSacoWeant/IRC_Analysis_TRS_UDP
+$ git clone https://github.com/ColaDuMacaco/IRC_Analisis_udp
 ```
 
 Para instalar el servidor Inspircd:
 ```sh
-$ docker build -t inspircd IRC_Analysis_TRS_UDP/Servidor/
+$ docker build -t inspircd IRC_Analisis_udp/Servidor/
 ```
 
 Para instalar el cliente Irssi:
 ```sh
-$ docker build -t irssi IRC_Analysis_TRS_UDP/Cliente/
+$ docker build -t irssi IRC_Analisis_udp/Cliente/
 ```
 
 Para instalar Polimorph:
 ```sh
-$ docker build -t polymorph IRC_Analysis_TRS_UDP/Polymorph/
+$ docker build -t polymorph IRC_Analisis_udp/Polymorph/
 ```
 
 
