@@ -3,6 +3,8 @@ FROM ubuntu:20.04
 MAINTAINER Pablo Ahumada "pablo.ahumada1@mail.udp.cl"
 MAINTAINER Joaquín Fernández "joaquin.fernandez1@mail.udp.cl"
 
+WORKDIR /Polymorph
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y\
