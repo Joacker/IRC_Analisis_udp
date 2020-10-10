@@ -1,4 +1,4 @@
-# IRC_Analysis_TRS_UDP
+# IRC_Analysis
 Dockerfiles para montar un cliente y servidor IRC de manera muy facil, con el fin de generar y analizar el trafico IRC generado por los mismos.
 Por Pablo Ahumada y Joaquín Fernández.
 
