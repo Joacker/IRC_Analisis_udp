@@ -9,7 +9,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y\
 && apt-get upgrade -y\
-&& apt-get install build-essential python-dev libnetfilter-queue-dev tshark tcpdump python3-pip wireshark git net-tools iptables vim -y\
+&& apt-get install build-essential python-dev libnetfilter-queue-dev tshark tcpdump python3-pip wireshark git net-tools iptables -y
 
 RUN pip3 install git+https://github.com/kti/python-netfilterqueue\
 && pip3 install polymorph
