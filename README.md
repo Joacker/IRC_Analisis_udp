@@ -19,6 +19,11 @@ Para instalar el cliente Irssi:
 $ docker build -t irssi IRC_Analysis_TRS_UDP/Cliente/
 ```
 
+Para instalar Polimorph:
+```sh
+$ docker build -t polymorph IRC_Analysis_TRS_UDP/Polymorph/
+```
+
 
 ## Uso
 
@@ -32,6 +37,10 @@ Crear un contenedor con la imagen del cliente:
 $ docker run -it --name clienteIRC irssi
 ```
 
+Crear un contenedor con la imagen de Polymorph
+```sh
+$ docker run --privileged
+```
 
 ## Video capturando trafico generado entre el servidor y cliente
 
