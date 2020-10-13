@@ -14,4 +14,6 @@ RUN apt-get install kmod
 RUN pip3 install git+https://github.com/kti/python-netfilterqueue\
 && pip3 install polymorph
 
-ENTRYPOINT [ "polymorph" ]
+RUN apt-get install sudo -y
+
+# ENTRYPOINT [ "sudo polymorph" ]
