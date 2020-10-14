@@ -14,6 +14,5 @@ RUN apt-get install kmod
 RUN pip3 install git+https://github.com/kti/python-netfilterqueue\
 && pip3 install polymorph
 
-CMD insmod /lib/modules/5.4.0-48-generic/kernel/net/ipv6/netfilter/ip6_tables.ko
-
-ENTRYPOINT [ "polymorph"]
+ENTRYPOINT ["polymorph","insmod"]
+CMD ["/lib/modules/5.4.0-48-generic/kernel/net/ipv6/netfilter/ip6_tables.ko"]
