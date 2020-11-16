@@ -50,3 +50,6 @@ $ docker run --privileged -it --name Polymorph polymorph
 
 [![Watch the video](https://img.youtube.com/vi/YPfMYmFvTxk/hqdefault.jpg)](https://youtu.be/YPfMYmFvTxk)
 
+## Metricas de red en IRC
+
+[![Watch the video](https://img.youtube.com/vi/zn3H9JhrvcU/hqdefault.jpg)](https://youtu.be/zn3H9JhrvcU)
