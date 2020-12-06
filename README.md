@@ -53,3 +53,9 @@ $ docker run --privileged -it --name Polymorph polymorph
 ## Metricas de red en IRC
 
 [![Watch the video](https://img.youtube.com/vi/zn3H9JhrvcU/hqdefault.jpg)](https://youtu.be/zn3H9JhrvcU)
+
+## Detección de paquetes IRC maliciosos con Snort
+
+[![Watch the video](https://img.youtube.com/vi/te29QGevanA/hqdefault.jpg)](https://youtu.be/te29QGevanA)
+
+
