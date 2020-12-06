@@ -1,0 +1,13 @@
+alert tcp any any -> $SV_IP 6667 (content: !"|50 49 4e 47 20|"; nocase; depth:5; flowbits:set,noping; flowbits:noalert; sid:1000002;)
+
+alert tcp any any -> $SV_IP 6667 (msg:"hay una url"; pcre:"/[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+-~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/"; flowbits:isset,noping; flowbits:unset,noping; sid:1000003;)
+
+alert tcp any any -> $SV_IP 6667 (flowbits:isset,noping; flowbits:unset,noping;flowbits:noalert; sid:1000004;)
+
+alert tcp any any -> $SV_IP 6667 (msg:"hay un exe o tar o wget"; pcre:"/(\.exe)|(\.tar)|(wget)/"; flow:from_client; sid:1000005;)
+
+alert tcp any any -> $SV_IP 6667 (msg:"paquete con carga muy grande"; dsize:>400; sid:1000006;)
+
+alert tcp any any -> $SV_IP 6667 (msg:"Comando LEAVE donde no debe haber"; content: "LEAVE"; offset:5; sid:1000007;)
+
+alert tcp any any -> $SV_IP 6667 (content:"NICK"; nocase; content:"bot"; nocase; msg:"Ha entrado un bot"; flow:to_server; sid:1000008;)
